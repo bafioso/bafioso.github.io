@@ -472,6 +472,6 @@ document.getElementById('loadbtn').addEventListener('click', function() {
             changepage()
         }
         a.readAsText(this.files[0]);
-        console.log(selected, track1, track2, track3, track4)
+        console.log(selected)
     })
 })
