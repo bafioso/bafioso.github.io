@@ -411,14 +411,14 @@ document.getElementById('loadbtn').addEventListener('click', function() {
         let a = new FileReader()
         a.onload = function() {
             let b = a.result.split('\n')
-            for (let c = 0; c < b.length; c++) {
+            for (let c = 0; c < 5; c++) {
                 let d = b[c].split(',')
                 if (c == 0) {
                     for (let e = 0; e < 4; e++)  {
                         let img = 'packimg_' + (e + 1).toString()
                         let src = 'Trax/' + packs[d[e]] + '/pack.gif'
                         if (d[e] != undefined && d[e] != '-') {
-                            selected[e + 1] = d[e + 1]
+                            selected[e + 1] = d[e]
                             document.getElementById(img).src = src
                         }
                         else {
@@ -428,7 +428,7 @@ document.getElementById('loadbtn').addEventListener('click', function() {
                     }
                 }
 
-                else if (c == 1) {
+                if (c == 1) {
                     track1 = []
                     for (let e = 0; e < d.length; e++) {
                         if (d[e] != '-') { track1[e + 1] = d[e] }
@@ -438,7 +438,7 @@ document.getElementById('loadbtn').addEventListener('click', function() {
                     }
                 }
 
-                else if (c == 2) {
+                if (c == 2) {
                     track2 = []
                     for (let e = 0; e < d.length; e++) {
                         if (d[e] != '-') { track2[e + 1] = d[e] }
@@ -448,7 +448,7 @@ document.getElementById('loadbtn').addEventListener('click', function() {
                     }
                 }
 
-                else if (c == 3) {
+                if (c == 3) {
                     track3 = []
                     for (let e = 0; e < d.length; e++) {
                         if (d[e] != '-') { track3[e + 1] = d[e] }
@@ -458,7 +458,7 @@ document.getElementById('loadbtn').addEventListener('click', function() {
                     }
                 }
 
-                else if (c == 4) {
+                if (c == 4) {
                     track4 = []
                     for (let e = 0; e < d.length; e++) {
                         if (d[e] != '-') { track4[e + 1] = d[e] }
@@ -472,5 +472,6 @@ document.getElementById('loadbtn').addEventListener('click', function() {
             changepage()
         }
         a.readAsText(this.files[0]);
+        console.log(selected, track1, track2, track3, track4)
     })
 })
