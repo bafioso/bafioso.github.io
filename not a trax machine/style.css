@@ -1,0 +1,133 @@
+#main {
+    width: 400px;
+    height: 378px;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+/* not a trax machine */
+#header {
+    width: 392px;
+    height: 24px;
+    padding: 4px;
+    border-top: 2px white dashed;
+    border-bottom: 2px white dashed;
+    overflow: hidden;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* pack selection */
+#picker {
+    width: 392px;
+    height: auto;
+    padding: 4px;
+    border-bottom: 2px white dashed;
+    overflow: hidden;
+}
+
+select {
+    width: 390px;
+    font-size: 13px;
+    border: 2px white solid;
+}
+
+/* loop selection */
+div.pack {
+    width: 392px;
+    height: auto;
+    padding: 4px;
+    overflow: hidden;
+}
+
+img.packimg {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    float: left;
+}
+
+input.a {
+    width: 25px;
+    font-size: 13px;
+    border: 2px white solid;
+}
+
+#pack_4 {
+    border-bottom: 2px white dashed;
+}
+
+#setpack_1 {
+    width: 20px;
+    height: 25px;
+    float: right;
+}
+
+#setpack_2 {
+    width: 20px;
+    height: 25px;
+    float: right;
+}
+
+#setpack_3 {
+    width: 20px;
+    height: 25px;
+    float: right;
+}
+
+#setpack_4 {
+    width: 20px;
+    height: 25px;
+    float: right;
+}
+
+/* sequencer */
+div.track {
+    width: 392px;
+    height: auto;
+    padding: 4px;
+    overflow: hidden;
+}
+
+input.beat {
+    width: 20px;
+    font-size: 8px;
+    border: 2px white solid;
+}
+
+#track_4 {
+    border-bottom: 2px white dashed;
+}
+
+/* controls */
+#footer {
+    width: 392px;
+    height: 24px;
+    padding: 4px;
+    border-bottom: 2px white dashed;
+    overflow: hidden;
+}
+
+#goleft {
+    float: left;
+}
+
+#goright {
+    float:right;
+}
+
+#playbtn {
+    width: 40px;
+}
+
+#savebtn {
+    width: 40px;
+}
+
+#loadbtn {
+    width: 40px;
+}
